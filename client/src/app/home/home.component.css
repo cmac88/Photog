@@ -23,14 +23,14 @@ body {
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
     
 }
 .logo-box {
     color: #fff;
     position: absolute;
-    top: 15%;
-    left: 40%;
+    top: 80%;
+    left: 50%;
     transform: translate(-50%, -50%);
     /* for setting button to center */
     text-align: center;
