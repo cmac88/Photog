@@ -12,7 +12,6 @@ import { LoginComponent } from './login/login.component';
 import { PackageComponent } from './package/package.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { GlobalNavComponent } from './global-nav/global-nav.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { GlobalNavComponent } from './global-nav/global-nav.component';
     LoginComponent,
     PackageComponent,
     GalleryComponent,
-    PortfolioComponent,
-    GlobalNavComponent
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
