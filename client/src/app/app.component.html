@@ -1,8 +1,14 @@
-<nav>
+<!-- <nav>
   <a routerLink="">Home</a>
   <a routerLink="/portfolio">Portfolio</a>
   <a routerLink="/gallery">Gallery</a>
-</nav>
-
+</nav> -->
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a routerLink="">Home</a>
+        <a routerLink="/portfolio">Portfolio</a>
+        <a routerLink="/gallery">Gallery</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 <router-outlet></router-outlet>

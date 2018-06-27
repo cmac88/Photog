@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper{
-    height: 95vh; 
+    height: 100vh; 
     background-image: linear-gradient(
         to right bottom, 
         rgba(111, 113, 213, 0.6),
