@@ -5,9 +5,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
     box-shadow: 2px 3px 7px #888888;
-    background-color:rgba(111, 113, 213, 0.6);
+    background-color:rgba(101, 101, 107, 0.593);
+    color: #fff;
          
     
 }
@@ -22,7 +23,4 @@
 }
 .login input[type=submit]{
   margin-left: 80px; 
-}
-.box{
-    background-color: pink;
 }

@@ -1,12 +1,14 @@
 * {box-sizing: border-box}
 
 /* Set height of body and the document to 100% */
-body, html {
+/* body, html {
     height: 100%;
     margin: 0;
     font-family: Arial;
+} */
+.body{
+    padding: 100px 300px;
 }
-
 /* Style tab links */
 .tablink {
     background-color: #555;
@@ -29,10 +31,10 @@ body, html {
     color: white;
     display: none;
     padding: 100px 20px;
-    height: 100%;
+    height: 50vh;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Home {background-color: rgba(93, 0, 255, 0.223);}
+#News {background-color: rgba(0, 128, 0, 0.278);}
+#Contact {background-color: rgba(0, 0, 255, 0.247);}
+#About {background-color: rgba(84, 82, 78, 0.34)}
