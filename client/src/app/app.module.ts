@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { PackageComponent } from './package/package.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SubGalleryComponent } from './sub-gallery/sub-gallery.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,16 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     LoginComponent,
     PackageComponent,
     GalleryComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SubGalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
