@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { routes } from './app.routes';
+import { moreRoutes } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -41,7 +41,7 @@ import {Location, CommonModule} from '@angular/common';
     CommonModule,
     HttpModule,
     ProductsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(moreRoutes)
 
   ],
   providers: [HttpService, ProductsService, CartService, Location],
