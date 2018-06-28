@@ -13,8 +13,6 @@ import { ProductFilterComponent } from './+products/components/product-filter/pr
 import { ProductListComponent } from './+products/components/product-list/product-list.component';
 import { ShoppingCartComponent } from './+products/components/shopping-cart/shopping-cart.component';
 
-import { moreRoutes } from './app.routes';
-
 const routes: Routes = [
   {path: 'products', component: ProductComponent},
   {path: 'color-list', component: ColorListComponent},
@@ -27,13 +25,9 @@ const routes: Routes = [
   {path: 'subfolio/:id', component: SubGalleryComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'happy/', component: PackageComponent},
-  {path: 'home', component: HomeComponent},
-  {path: '**', redirectTo: '/home'},
-].concat(moreRoutes as any[]);
-
-// const moreROutes: Routes = [{path: 'products', loadChildren: './+products/products.module#ProductsModule'}];
-
-// const routesfull: Routes = routes.concat(moreRoutes);
+  {path: '', component: HomeComponent},
+  {path: '**', redirectTo: '/'},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
