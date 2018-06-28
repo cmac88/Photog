@@ -4,6 +4,6 @@ import { ProductComponent } from './+products/components/product/product.compone
 // const moreRoutes: Routes[];
 
 export const moreRoutes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'products'},
+  // {path: '', pathMatch: 'full', redirectTo: 'products'},
   {path: 'products', component: ProductComponent, loadChildren: './+products/products.module#ProductsModule'}
 ];
