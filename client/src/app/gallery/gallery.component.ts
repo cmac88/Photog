@@ -12,7 +12,7 @@ user: any;
   ngOnInit() {
   }
 
-  onSubmit(){
+  onSubmit() {
 
   }
 }
