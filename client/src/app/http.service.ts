@@ -7,7 +7,8 @@ export class HttpService {
 
   constructor(private _http: HttpClient) { }
 
-  getpic(id){
-    this._http.get("/assets/gallery/"+id)
+  getUser(user){
+    console.log('service here', user)
+    return this._http.get('/api/user/'+ user.name)
   }
 }
