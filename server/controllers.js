@@ -1,4 +1,5 @@
 const Users = require('./models')('mongodb://localhost/users');
+const util = require('util')
 
 let good = (data) => ({status: 'good', data:data});
 let bad = (errs) => ({status: 'bad', data:errs});
@@ -16,10 +17,13 @@ function addUser(req,res){
         .catch(errs=>res.json(bad(errs)));
 }
 function readOne(req,res){
-    Users.findById(req.params.id)
+    Users.findOne({name: req.params.name})
         .then(data=>res.json(good(data)))
-        .catch(errs=>res.json(bad(errs)));
+        .catch(errs=>{
+            console.log(errs)
+            res.json(bad(errs))});
 }
+
 function updateOne(req,res){
     console.log('This is the controller speaking', req.body);
     // console.log(req.params.id);
