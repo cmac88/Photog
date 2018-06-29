@@ -6,8 +6,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { LoginComponent } from './login/login.component';
 import { PackageComponent } from './package/package.component';
 import { SubGalleryComponent } from './sub-gallery/sub-gallery.component';
+import { UsergalleryComponent } from './usergallery/usergallery.component';
 
 const routes: Routes = [
+  {path: 'usergallery', component: UsergalleryComponent},
   {path: 'login', component: LoginComponent},
   {path: 'portfolio', component: PortfolioComponent},
   {path: 'subfolio/:id', component: SubGalleryComponent},
