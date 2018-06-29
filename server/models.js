@@ -1,5 +1,10 @@
 const mongoose = require('mongoose');
 
+const ImageSchema = new mongoose.Schema({
+    imageURL: String
+}, {timestamps: true});
+
+
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
