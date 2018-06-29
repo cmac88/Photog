@@ -7,8 +7,8 @@ export class HttpService {
 
   constructor(private _http: HttpClient) { }
 
-  getUser(user){
-    console.log('service here', user)
-    return this._http.get('/api/user/'+ user.name)
+  getUser(name) {
+    console.log('service here', name);
+    return this._http.get('/api/user/' + name);
   }
 }

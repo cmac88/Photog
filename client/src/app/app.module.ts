@@ -13,6 +13,7 @@ import { PackageComponent } from './package/package.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SubGalleryComponent } from './sub-gallery/sub-gallery.component';
+import { UsergalleryComponent } from './usergallery/usergallery.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SubGalleryComponent } from './sub-gallery/sub-gallery.component';
     PackageComponent,
     GalleryComponent,
     PortfolioComponent,
-    SubGalleryComponent
+    SubGalleryComponent,
+    UsergalleryComponent
   ],
   imports: [
     BrowserModule,
